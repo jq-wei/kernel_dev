@@ -1,0 +1,54 @@
+# --- Compiled binaries and objects ---
+*.o
+*.a
+*.so
+*.out
+*.exe
+*.bin
+*.dll
+*.lib
+*.dylib
+
+# --- Build directories ---
+build/
+bin/
+obj/
+Debug/
+Release/
+x64/
+.vs/
+
+# --- CUDA-specific ---
+*.cubin
+*.ptx
+*.fatbin
+
+# --- Python/ML (for Triton client libraries) ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+*.whl
+
+# --- IDE/Editor ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# --- System/OS ---
+Thumbs.db
+*.log
+*.tmp
+
+# --- CMake ---
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# --- Triton Server/Client (if applicable) ---
+model_repository/  # Exclude local model repo unless intentional
+clients/           # Pre-built client libraries (if downloaded)
