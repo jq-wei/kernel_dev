@@ -52,3 +52,9 @@ Makefile
 # --- Triton Server/Client (if applicable) ---
 model_repository/  # Exclude local model repo unless intentional
 clients/           # Pre-built client libraries (if downloaded)
+
+# Ignore all extensionless binaries
+/*
+!*.c
+!*.h
+!.gitignore
