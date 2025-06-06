@@ -54,7 +54,11 @@ model_repository/  # Exclude local model repo unless intentional
 clients/           # Pre-built client libraries (if downloaded)
 
 # Ignore all extensionless binaries
-/*
+
+# Ignore extensionless binaries in root and subdirectories
+/[!.]*      # Root-level files without extensions
+/*/*        # Subdirectory files without extensions (adjust depth as needed)
 !*.c
 !*.h
+!*.cpp      # Add other source extensions if needed
 !.gitignore
