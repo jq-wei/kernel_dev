@@ -9,7 +9,7 @@
 // #endif
 
 #define PI 3.1415
-#define AREA(r) (PI*r*r)
+#define AREA(r) (PI*r*r) // lambda func
 
 #ifndef radius
 #define radius 7
