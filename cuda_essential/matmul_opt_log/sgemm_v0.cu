@@ -90,6 +90,7 @@ int main() {
     cudaEventCreate(&stop);
 
     float total_milliseconds = 0.0f;
+    
 
     // Here d_c is modified, so only one run to match cpu res. If matching is not 
     // important, we can run more iterations to have averaged profile.
