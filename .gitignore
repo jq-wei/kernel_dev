@@ -62,3 +62,7 @@ clients/           # Pre-built client libraries (if downloaded)
 !*.h
 !*.cpp      # Add other source extensions if needed
 !.gitignore
+
+# profiling files
+*.nsys-rep
+*.sqlite
